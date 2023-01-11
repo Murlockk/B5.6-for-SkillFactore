@@ -19,7 +19,7 @@ while True:
         for i in XO:
             print(i)
 
-    if (XO[0][0] == XO[1][1] and XO[1][1] == XO[2][2]) :
+    if (XO[0][0] == XO[1][1] and XO[1][1] == XO[2][2]) or (XO[0][0] == XO[0][1] and XO[0][1] == XO[0][2]) :
         print('Конец игры!')
         for i in XO:
             print(i)
@@ -33,7 +33,7 @@ while True:
         for i in XO:
             print(i)
 
-    if (XO[0][0] == XO[1][1] and XO[1][1] == XO[2][2]) :
+    if (XO[0][0] == XO[1][1] and XO[1][1] == XO[2][2]) or (XO[0][0] == XO[0][1] and XO[0][1] == XO[0][2]) :
         print('Конец игры!')
         for i in XO:
             print(i)
