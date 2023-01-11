@@ -1,0 +1,40 @@
+# крестики нолики
+XO = [
+    ['-','-','-'],
+    ['-','-','-'],
+    ['-','-','-']
+]
+round = 0
+
+for i in XO:
+    print(i)
+
+while True:
+
+    if round == 0:
+        print('Крестики - первые')
+        X = input('Введите строку и столбец(от 1 до 3)')
+        XO[int(X[0]) - 1][int(X[2]) - 1] = 'X'
+        round = 1
+        for i in XO:
+            print(i)
+
+    if (XO[0][0] == XO[1][1] and XO[1][1] == XO[2][2]) :
+        print('Конец игры!')
+        for i in XO:
+            print(i)
+        break
+
+    if round == 1:
+        print('Нолики')
+        X = input('Введите строку и столбец(от 1 до 3)')
+        XO[int(X[0]) - 1][int(X[2]) - 1] = 'O'
+        round = 0
+        for i in XO:
+            print(i)
+
+    if (XO[0][0] == XO[1][1] and XO[1][1] == XO[2][2]) :
+        print('Конец игры!')
+        for i in XO:
+            print(i)
+        break
